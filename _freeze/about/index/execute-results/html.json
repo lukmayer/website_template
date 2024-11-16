@@ -1,0 +1,15 @@
+{
+  "hash": "62cc4e3b6a40ff41d0a097455089d369",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: Your future about page\ndescription: Some general information about Quarto functionality \nbibliography: references.bib\n---\n\n\n\n\n\n\n\n\n# Basic Markdown Features\n\n# Links and images\n\n[Lukas W. Mayer's website](https://lukmayer.github.io)\n\n![](../assets/dude.png)\n\n\n## Text Formatting\n\nThis is **bold text**, *italic text*, and ***bold italic text***. \nYou can also use ~~strikethrough~~ and `inline code`.\n\n## Lists\n\n- Unordered list item 1\n  - Nested item A\n  - Nested item B\n- Unordered list item 2\n\n1. Ordered list item 1\n2. Ordered list item 2\n   1. Nested ordered item\n\n## Blockquotes\n\n> This is a blockquote\n> Multiple lines can be used\n\n## Mathematical Expressions\n\nInline math: $E = mc^2$\n\nDisplay math:\n$$\n\\begin{aligned}\n\\frac{\\partial f}{\\partial x} &= 2x \\\\\n\\int_0^\\infty e^{-x} dx &= 1\n\\end{aligned}\n$$\n\n## Code Blocks\n\nPassive code block (only for show, no execution):\n\n```python\ndef hello_world():\n    print(&quot;Hello, Quarto!&quot;)\n    return True\n```\n\nActive code block (this code will be executed):\n\n\n\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nplot(rnorm(100), rnorm(100))\n```\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n\n\n\n\n\n\n\n## Tables\n\n| Header 1 | Header 2 | Header 3 |\n|----------|----------|----------|\n| Row 1    | A        | 1        |\n| Row 2    | B        | 2        |\n| Row 3    | C        | 3        |\n\n## Callouts\n\n::: {.callout-note}\nThis is a note callout\n:::\n\n::: {.callout-warning}\nThis is a warning callout\n:::\n\n\n## Footnotes and references\n\nHere's a sentence with a footnote[^1].\n\n[^1]: This is the footnote text.\n\nYou can also use inline footnotes^[Like this one which is written inline].\n\nHere's how to reference: @Mayer2024\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

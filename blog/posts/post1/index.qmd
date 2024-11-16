@@ -1,0 +1,42 @@
+---
+title: Customization Workflow 
+description: "How to customize your quarto website further"
+image: "../../../assets/dude.png"
+date: "2024-16-11"
+categories: [customization, website]
+---
+
+Generally speaking you want to first check whether the Quarto documentation has something that can help you achieve the thing you want to do. The documentation is extensive but sometimes it can be hard to find the right information as it's sometimes in places you didn't expect. I would recommend reading quite widely. For example, you might not have an interest in books or dashboards, but these pages still sometimes have nuggets that allow you to do something cool on your website.
+
+If you can't find anything powerful enough, you may have to write your own code. This could mean writing completely new things, or just overwriting existing code. Most of the time you will be doing the latter, say to change the color of something. For this it's important to know that you can embed html code directly in your document. This also means you can have css and javascript in there by wrapping that code in `<style>` and `<script>` tags respectively. This is the best way to go about modifying single pages. 
+
+So how to go about changing the style of something on your quarto website? The easiest low-code approach is to tell a language model what you want and then just try if that works. To maximize your success you need to tell the model what the name of the thing is you want to change. For example let's say I want to change the font color of my title block. You would open your website, find a title block somewhere, right-click on it and click "inspect". This will open the developer tools of your browser and show you the html code of the page. You can then hover over the code and see what part of the page it corresponds to. Once you found the segment you want to change, you can right-click on it and click "copy" and then something like "copy element". You can supply all of this to the language model, and it will probably figure out what you mean from there. In our case all we really needed is CSS code to modify this:
+
+```html
+<div class="quarto-title-banner">
+```
+
+which could be something like:
+
+```css
+.quarto-title-banner {
+    color: red;
+}
+```
+
+The CSS you can either embed on your page by wrapping it in `<style>` tags, or you can put it in your styles.css file. The latter is the better approach if you want to change something on all pages.
+
+Here's how to wrap in `<style>` tags:
+
+```html
+<style>
+.quarto-title-banner {
+    color: red;
+}
+</style>
+```
+
+If you want to add code to all pages you can also use includes. Check here for more information: [https://quarto.org/docs/reference/formats/pdf.html#includes](https://quarto.org/docs/reference/formats/pdf.html#includes). This is can be very time-saving, and is something I use for my login portal  (see [this post](https://lukmayer.github.io/blog/posts/login/)).
+
+
+Lastly, keep in mind that things can be buggy (especially anything involving lots of code chunks or revealjs). You sometimes have to clear some cache hidden somewhere or restart the preview server to see changes.

@@ -1,0 +1,45 @@
+---
+title: "Example presentation"
+author: "Luke"
+format: 
+  revealjs:
+    navigation-mode: linear 
+    center: true
+    incremental: true
+    scrollable: true
+    transition: slide
+    background-transition: fade
+    transition-speed: default
+    theme: dark
+    slide-number: true
+    show-slide-number: print
+    preview-links: true
+    chalkboard: true
+    buttons: true
+    controls: true
+    touch: true       
+---
+
+## My website
+
+- [Lukas W. Mayer's website](https://lukmayer.github.io)
+
+- now, some tips about revealjs
+
+## Some tips about revealjs 1
+
+- freeze: true can cause issues 
+- if it doesnt look right, go to the _freeze directory
+- then check the site_libs directory for a revealjs folder
+- delete that folder and re-render the presentation.
+
+## Some tips about revealjs 2
+
+- you may have to render the presentation separately, before rendering the website.
+- so edit your presentation with the revealjs freeze folder removed
+- then render the presentation file, and then render the website.
+
+
+## The end
+
+- [More info about RevealJS here](https://quarto.org/docs/presentations/revealjs/index.html)

@@ -1,0 +1,51 @@
+---
+title: "Curriculum Vitae"
+description: "Some information you want search engines to know about"
+format:
+  html:
+    page-layout: full
+---
+
+
+::: {.panel-tabset}
+## Academic
+
+<div class="responsive-pdf">
+  <embed src="cv.pdf" type="application/pdf">
+</div>
+
+## Industry
+
+You can link a different version here or use tabs for whatever you like!
+Your creativity is the limit.
+
+note that each high level header within the tabset class will be a tab
+
+:::
+
+
+<style>
+  /* hide the description */
+.description {
+    display: none;
+}
+
+/* Responsive PDF container for more vertical documents */
+.responsive-pdf {
+    position: relative;
+    padding-bottom: 90%; /* More vertical aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #f0f0f0;
+    margin-bottom: 20px;
+}
+
+.responsive-pdf embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+</style>

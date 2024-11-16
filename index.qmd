@@ -1,0 +1,200 @@
+---
+title: "Your name"
+description: "Some information about you that you want search engines to see"
+
+format: 
+  html:
+    toc: false #turn off table of contents for this page
+    anchor-sections: false  #turn off "anchor links" for this page (section links)
+back-to-top-navigation: false # turn off the "back to top" button for this page
+---
+
+<!-- 
+Here is a template for a nice looking homepage.
+
+I make heavy use of ::: syntax which allows me to create html-like divs and classes in markdown.
+
+the general structure is:
+
+:::{.some-class}
+    some content modified by the class
+:::
+
+Often you can use multiple classes like this:
+
+:::{.class1 .class2}
+    some content modified by the classes
+:::
+
+or 
+
+:::{.class1}
+    :::{.class2}
+        some content modified by the classes
+    :::
+:::
+
+-->
+
+
+
+<!-- 
+this defines how wide the content should be
+check https://quarto.org/docs/authoring/article-layout.html#page-column
+for more information
+ -->
+:::{.column-page} 
+
+\ 
+<!-- '\' is a spacer -->
+
+
+<!-- 
+heres how to specify multi column layouts
+note that this uses four colons instead of three
+
+you can set the width in percentages or pixels
+padding modifies the gap between columns
+
+General structure:
+:::: {.columns}
+::: {.column width="40%" style="padding-right: 20px;"}
+    column 1 content 
+:::
+::: {.column width="60%" style="padding-left: 20px;"}
+    column 2 content
+:::
+
+-->
+
+
+
+:::: {.columns}
+
+::: {.column width="40%" style="padding-right: 20px;"}
+
+::: {.animate__animated .animate__fadeIn style="--animate-duration: 2s;"}
+![](assets/dude.png)
+:::
+
+:::
+
+::: {.column width="60%" style="padding-left: 20px;"}
+
+### Welcome to the [lukmayer.github.io](https://lukmayer.github.io) website template!
+
+The way this template is intended is that you look at the source files and the rendered site at the same time to see how the different features I show you throughout this template can be used. This is because I provide a lot of comments in the source files to help you. These comments do not necessarily show in the rendered site. Hope you enjoy!
+
+\
+
+<!-- 
+
+Here is how we can specify some buttons with links in html
+you can very easily ask chatgpt to modify this to your liking if you dont know how to modify this yourself
+make sure it knows that you use the bootstrap icon set
+
+-->
+
+<div class="button-group" style="display: flex; gap: 20px;">
+
+<a href="mailto:youremail@mail.com" class="button-link" target="_blank" style="text-decoration: none; color: white; background-color: #222; padding: 10px 20px; border-radius: 5px; display: inline-block; font-size: 1.2rem; text-align: center;">
+    <i class="bi bi-envelope" style="font-size: 1.5rem; margin-right: 8px;"></i>Email
+</a>
+
+<a href="https://github.com/lukmayer" class="button-link" target="_blank" style="text-decoration: none; color: white; background-color: #222; padding: 10px 20px; border-radius: 5px; display: inline-block; font-size: 1.2rem; text-align: center;">
+    <i class="bi bi-github" style="font-size: 1.5rem; margin-right: 8px;"></i>Github
+</a>
+
+<a href="https://medium.com/@willuk" class="button-link" target="_blank" style="text-decoration: none; color: white; background-color: #222; padding: 10px 20px; border-radius: 5px; display: inline-block; font-size: 1.2rem; text-align: center;">
+    <i class="bi bi-medium" style="font-size: 1.5rem; margin-right: 8px;"></i>Medium
+</a>
+
+</div>
+
+:::
+
+::::  
+
+:::
+
+
+
+<!-- 
+below is some css code that ensures that the buttons are styled correctly
+and also work on mobile devices
+
+you should not need to modify this other than the color values
+I have not tried wether this works ok for more than 3 buttons
+ -->
+
+
+<style>
+
+.content.quarto-banner-title-block {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+}
+
+.quarto-title {
+    margin: 0 auto;  /* Center the container */
+    padding-left: 6rem;  /* change until centered */
+    max-width: 1200px;  /* Control maximum width */
+    width: 90%;  /* Use percentage width for responsiveness */
+    text-align: left;  /* Left align the text */
+}
+
+
+.button-link {
+    background-color: #222; /* Default button background */
+    color: white; /* Default text color */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+    padding: 10px 20px; /* Padding for the button look */
+    border-radius: 5px; /* Rounded corners */
+    display: inline-block;
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration: none; /* No underline */
+}
+
+.button-link:hover {
+    background-color: #444 !important; /* Change to lighter color on hover */
+    transform: scale(1.2); /* Slightly increase size on hover */
+}
+
+/* Default desktop view */
+.button-group {
+    display: flex; /* Keep the buttons in a row by default */
+    gap: 20px; /* Space between buttons */
+}
+
+
+@media (max-width: 768px) {
+  /* Adjust the layout for mobile screens (small screens) */
+  
+  .columns {
+    flex-direction: column; /* Stack the columns vertically on mobile */
+  }
+
+  .column {
+    width: 100% !important; /* Make each column take up full width on mobile */
+    padding: 0; /* Adjust padding for mobile */
+  }
+
+  /* Make the button links stack vertically with some spacing */
+  .button-link {
+    display: block;
+    width: 100%; /* Make buttons full width */
+    margin-bottom: 10px; /* Add space between buttons */
+    text-align: center;
+  }
+
+  .button-group {
+        flex-direction: column; /* Stack buttons vertically on small screens */
+        gap: 10px; /* Space between buttons when stacked */
+        width: 100%; /* Ensure the group takes full width */
+    }
+
+}
+
+
+</style>
