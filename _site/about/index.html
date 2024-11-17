@@ -301,7 +301,7 @@ window.Quarto = {
 <section id="blockquotes" class="level2">
 <h2 class="anchored" data-anchor-id="blockquotes">Blockquotes</h2>
 <blockquote class="blockquote">
-<p>This is a blockquote Multiple lines can be used</p>
+<p>This is a blockquote</p>
 </blockquote>
 </section>
 <section id="mathematical-expressions" class="level2">
@@ -397,7 +397,7 @@ Warning
 <h2 class="anchored" data-anchor-id="footnotes-and-references">Footnotes and references</h2>
 <p>Here’s a sentence with a footnote<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
 <div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;This is the footnote text.</p></div><div id="fn2"><p><sup>2</sup>&nbsp;Like this one which is written inline</p></div></div><p>You can also use inline footnotes<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.</p>
-<p>Here’s how to reference: <span class="citation" data-cites="Mayer2024">Mayer (<a href="#ref-Mayer2024" role="doc-biblioref">2024</a>)</span></p>
+<p>Here’s how to reference: <span class="citation" data-cites="Mayer2024">Mayer (<a href="#ref-Mayer2024" role="doc-biblioref">2024</a>)</span> Note the bibliography linked in the front matter of this document.</p>
 
 
 
@@ -869,7 +869,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","selector":".lightbox","loop":false,"openEffect":"zoom"});
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","loop":false,"openEffect":"zoom","closeEffect":"zoom","selector":".lightbox"});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {

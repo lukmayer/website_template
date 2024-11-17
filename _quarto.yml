@@ -47,11 +47,15 @@ website: # Here are some settings for your website
 
 
   navbar: # the navbar is the navigation menu at the top of your website
+  # technically, there is also the sidebar, but its more useful for large sites
     logo: "assets/favicons/android-chrome-512x512.png"
     # above is how you can add a logo to your navbar, in this case its the favicon
     
     # you can structure your navbar just like the footer
     # you can add icons the same way as in the footer
+    # note the syntax for adding pages that are not the homepage
+    # essentially, you create a folder with the name of the page and put an index.qmd file in it
+    # this helps keep your project organized, and makes your links look cleaner
     left:
       - href: index.qmd
         text: "Home"

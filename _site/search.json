@@ -1,19 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Your name",
-    "section": "",
-    "text": "Welcome to the lukmayer.github.io website template!\nThe way this template is intended is that you look at the source files and the rendered site at the same time to see how the different features I show you throughout this template can be used. This is because I provide a lot of comments in the source files to help you. These comments do not necessarily show in the rendered site. Hope you enjoy!\n\n\n\n\n Email \n Github \n Medium"
-  },
-  {
-    "objectID": "about/index.html",
-    "href": "about/index.html",
-    "title": "Basic Markdown Features",
-    "section": "",
-    "text": "This is bold text, italic text, and bold italic text. You can also use strikethrough and inline code.\n\n\n\n\nUnordered list item 1\n\nNested item A\nNested item B\n\nUnordered list item 2\n\n\nOrdered list item 1\nOrdered list item 2\n\nNested ordered item\n\n\n\n\n\n\nThis is a blockquote Multiple lines can be used\n\n\n\n\nInline math: \\(E = mc^2\\)\nDisplay math: \\[\n\\begin{aligned}\n\\frac{\\partial f}{\\partial x} &= 2x \\\\\n\\int_0^\\infty e^{-x} dx &= 1\n\\end{aligned}\n\\]\n\n\n\nPassive code block:\ndef hello_world():\n    print(&quot;Hello, Quarto!&quot;)\n    return True\nActive code block:\n\n\nCode\nplot(rnorm(100), rnorm(100))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHeader 1\nHeader 2\nHeader 3\n\n\n\n\nRow 1\nA\n1\n\n\nRow 2\nB\n2\n\n\nRow 3\nC\n3"
-  },
-  {
     "objectID": "about/index.html#text-formatting",
     "href": "about/index.html#text-formatting",
     "title": "Your future about page",
@@ -32,7 +18,7 @@
     "href": "about/index.html#blockquotes",
     "title": "Your future about page",
     "section": "Blockquotes",
-    "text": "Blockquotes\n\nThis is a blockquote Multiple lines can be used"
+    "text": "Blockquotes\n\nThis is a blockquote"
   },
   {
     "objectID": "about/index.html#mathematical-expressions",
@@ -56,20 +42,6 @@
     "text": "Tables\n\n\n\nHeader 1\nHeader 2\nHeader 3\n\n\n\n\nRow 1\nA\n1\n\n\nRow 2\nB\n2\n\n\nRow 3\nC\n3"
   },
   {
-    "objectID": "cv/index.html",
-    "href": "cv/index.html",
-    "title": "Curriculum Vitae",
-    "section": "",
-    "text": "AcademicIndustry\n\n\n\n\n\n\n\nYou can link a different version here or use tabs for whatever you like! Your creativity is the limit.\nnote that each high level header within the tabset class will be a tab\n\n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "blog/index.html",
-    "href": "blog/index.html",
-    "title": "Your blog name",
-    "section": "",
-    "text": "Because I set an ID, I can place text above the listing\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nCustomization Workflow\n\n\n3 min\n\n\nHow to customize your quarto website further\n\n\n\nApr 11, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nEmbedding presentations\n\n\n1 min\n\n\nHow to embed presentations in your quarto document\n\n\n\nMar 11, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nempty post\n\n\n1 min\n\n\n\n\n\n\nJan 1, 1970\n\n\n\n\n\n\n\n\nNo matching items\n\n\n  \n\n\nand below the listing!\nCheck out the pagination over here ——————–&gt;\nIt only looks weird because I limited page size to 2\n\n\n\n\n Back to top"
-  },
-  {
     "objectID": "about/index.html#callouts",
     "href": "about/index.html#callouts",
     "title": "Your future about page",
@@ -81,7 +53,14 @@
     "href": "about/index.html#footnotes-and-references",
     "title": "Your future about page",
     "section": "Footnotes and references",
-    "text": "Footnotes and references\nHere’s a sentence with a footnote1.\n1 This is the footnote text.2 Like this one which is written inlineYou can also use inline footnotes2.\nHere’s how to reference: Mayer (2024)"
+    "text": "Footnotes and references\nHere’s a sentence with a footnote1.\n1 This is the footnote text.2 Like this one which is written inlineYou can also use inline footnotes2.\nHere’s how to reference: Mayer (2024) Note the bibliography linked in the front matter of this document."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Your name",
+    "section": "",
+    "text": "Welcome to the lukmayer.github.io website template!\nThe way this template is intended is that you look at the source files and the rendered site at the same time to see how the different features I show you throughout this template can be used. This is because I provide a lot of comments in the source files to help you. These comments do not necessarily show in the rendered site. Hope you enjoy!\n\n\n\n\n Email \n Github \n Medium"
   },
   {
     "objectID": "blog/posts/post2/index.html",
@@ -89,6 +68,13 @@
     "title": "Embedding presentations",
     "section": "",
     "text": "RevealJS is super powerful and has tons of amazing features. Even better, we can embed such presentations into quarto documents since they can be rendered to html.\nHere’s how to do it:\n\n\nDefinetely make sure to read the Quarto RevealJS documentation as this is not the focus of this template. You can find it here\nI’m pretty sure you can embed other types of interactive content with this method as well, but have not had the chance to try it yet!\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Your blog name",
+    "section": "",
+    "text": "Because I set an ID, I can place text above the listing\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nCustomization Workflow\n\n\n3 min\n\n\nHow to customize your quarto website further\n\n\n\nApr 11, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nEmbedding presentations\n\n\n1 min\n\n\nHow to embed presentations in your quarto document\n\n\n\nMar 11, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nempty post\n\n\n1 min\n\n\n\n\n\n\nJan 1, 1970\n\n\n\n\n\n\n\n\nNo matching items\n\n\n  \n\n\nand below the listing!\nCheck out the pagination over here ——————–&gt;\nIt only looks weird because I limited page size to 2\n\n\n\n\n Back to top"
   },
   {
     "objectID": "blog/posts/post1/index.html",
@@ -105,39 +91,18 @@
     "text": "an empty post so that you can see the pagination of the blog\n\n\n\n Back to top"
   },
   {
+    "objectID": "cv/index.html",
+    "href": "cv/index.html",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "AcademicIndustry\n\n\n\n\n\n\n\nYou can link a different version here or use tabs for whatever you like! Your creativity is the limit.\nnote that each high level header within the tabset class will be a tab\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
     "objectID": "presentations/pres1.html#my-website",
     "href": "presentations/pres1.html#my-website",
     "title": "Example presentation",
     "section": "My website",
     "text": "My website\n\nLukas W. Mayer’s website\nnow, some tips about revealjs"
-  },
-  {
-    "objectID": "presentations/pres1.html#some-tips-about-revealjs",
-    "href": "presentations/pres1.html#some-tips-about-revealjs",
-    "title": "Example presentation",
-    "section": "Some tips about revealjs",
-    "text": "Some tips about revealjs\n\nfreeze: true can cause issues\nif it doesnt look right, go to the _freeze directory\nthen check the site_libs directory for a revealjs folder\ndelete that folder and re-render the presentation."
-  },
-  {
-    "objectID": "presentations/pres1.html#when-stuff-breaks",
-    "href": "presentations/pres1.html#when-stuff-breaks",
-    "title": "Example presentation",
-    "section": "When stuff breaks",
-    "text": "When stuff breaks\n\nfreeze: true can cause issues\nif it doesnt look right, go to the _freeze directory\nthen check the site_libs directory for a revealjs folder\ndelete that folder and re-render the presentation."
-  },
-  {
-    "objectID": "presentations/pres1.html",
-    "href": "presentations/pres1.html",
-    "title": "Example presentation",
-    "section": "",
-    "text": "Lukas W. Mayer’s website\nnow, some tips about revealjs"
-  },
-  {
-    "objectID": "presentations/pres1.html#the-end",
-    "href": "presentations/pres1.html#the-end",
-    "title": "Example presentation",
-    "section": "The end",
-    "text": "The end\n\nMore info about RevealJS here"
   },
   {
     "objectID": "presentations/pres1.html#some-tips-about-revealjs-1",
@@ -152,5 +117,12 @@
     "title": "Example presentation",
     "section": "Some tips about revealjs 2",
     "text": "Some tips about revealjs 2\n\nyou may have to render the presentation separately, before rendering the website.\nso edit your presentation with the revealjs freeze folder removed\nthen render the presentation file, and then render the website."
+  },
+  {
+    "objectID": "presentations/pres1.html#the-end",
+    "href": "presentations/pres1.html#the-end",
+    "title": "Example presentation",
+    "section": "The end",
+    "text": "The end\n\nMore info about RevealJS here"
   }
 ]
